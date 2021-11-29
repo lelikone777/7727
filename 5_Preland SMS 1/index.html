@@ -21,6 +21,7 @@
             width: 100vw;
             height: 100vh;
             overflow: hidden;
+            position: relative;
         }
         .content {
             max-width: 90%;
@@ -28,7 +29,7 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            /*justify-content: space-between;*/
         }
         .top {
             margin: 0 auto;
@@ -54,6 +55,7 @@
             width: 100%;
             margin: 0 auto;
             align-self: center;
+            flex: 1;
         }
         .middle__img {
             width: 413px;
@@ -91,8 +93,12 @@
             color: #000000;
         }
         .footer {
-            margin: 0 auto 4px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
             background-color: #000000;
+            min-height: 55px;
         }
         .footer__text {
             font-style: normal;
@@ -101,6 +107,7 @@
             line-height: 20px;
             text-align: center;
             color: #ffffff;
+            margin-top: 4px;
         }
         .footer__link {
             text-decoration: underline;
@@ -134,7 +141,7 @@
                 line-height: 18px;
             }
             .footer {
-                width: 90%;
+                /*width: 90%;*/
             }
             .footer__text {
                 font-size: 12px;
@@ -144,6 +151,7 @@
         @media (max-height: 465px) {
             .middle {
                 align-self: center;
+                flex: 0;
             }
             .middle__img {
                 display: none;
@@ -192,6 +200,11 @@
                 line-height: 16px;
             }
         }
+        @media (min-height: 731px) {
+            .middle {
+                flex: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -206,6 +219,7 @@
         <div class="middle__text">assistance 0975182032 <br>
             4.5 EURO par SMS + prix SMS</div>
     </div>
+    <div class="flop"></div>
 </div>
 <div class="footer">
     <div class="footer__text"> En cliquant sur continuer, vous déclaréz avoir lu et accepté les
