@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(162.46deg, #816AE2 43.34%, #EAECEE 100%) no-repeat;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .content {
+            max-width: 90%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .top {
+            margin: 0 auto;
+            padding-top: 18px;
+        }
+        .top__logo {
+            margin: 0 auto 18px;
+            background: url('img/logo.svg') no-repeat;
+            width: 256px;
+            height: 46px;
+        }
+        .top__text {
+            margin: 8px auto 18px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+        }
+        .middle {
+            width: 100%;
+            margin: 0 auto;
+            align-self: center;
+        }
+        .middle__img {
+            width: 229px;
+            height: 234px;
+            margin: 18px auto 18px;
+            background: url('img/hero.svg') no-repeat;
+            -webkit-background-size: contain;
+            background-size: contain;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            border-radius: 30px;
+        }
+        .middle__button {
+            display: block;
+            margin: 0 auto;
+            padding: 25px 64px;
+            background: linear-gradient(96.47deg, #4F71B6 8.41%, #5180DE 80.43%);
+            box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            border: none;
+            text-align: center;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 49px;
+            color: #FFFFFF;
+        }
+        .middle__text {
+            max-width: 80%;
+            margin: 4px auto 0;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #000000;
+        }
+        .footer {
+            margin: 0 auto 4px;
+        }
+        .footer__text {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #0A0A0A;
+        }
+        .footer__link {
+            text-decoration: underline;
+            color: #0A0A0A;
+        }
+        @media (max-height: 640px) {
+            .middle__button {
+                padding: 15px 64px;
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+        @media (max-height: 578px) {
+            .middle__img {
+                width: 200px;
+                height: 204px;
+            }
+            .middle__button {
+                padding: 15px 64px;
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+        @media (max-height: 515px) {
+            .middle__img {
+                width: 150px;
+                height: 153px;
+            }
+            .middle__text {
+                font-size: 14px;
+                line-height: 18px;
+            }
+            .footer {
+                width: 90%;
+            }
+            .footer__text {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+        @media (max-height: 465px) {
+            .middle {
+                align-self: center;
+            }
+            .middle__img {
+                display: none;
+            }
+            .middle__button {
+                padding: 25px 64px;
+            }
+            .middle__text {
+                width: 100%;
+            }
+            .footer {
+                margin-top: 0;
+            }
+        }
+        @media (max-height: 390px) {
+            .middle__img {
+                display: none;
+            }
+        }
+        @media (max-width: 370px) {
+            .middle__img {
+                width: 139px;
+                height: 142px;
+            }
+            .middle__button {
+                padding: 25px 0;
+                width: 90%;
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+        @media (max-width: 370px) and (max-height: 584px) {
+            .top__text {
+                font-size: 15px;
+                line-height: 17px;
+            }
+            .middle__text {
+                font-size: 14px;
+                line-height: 18px;
+            }
+            .middle__button {
+                /*padding: 15px 64px;*/
+            }
+            .footer__text {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="top">
+        <div class="top__logo"></div>
+
+    </div>
+    <div class="middle">
+        <div class="middle__img"></div>
+        <div class="top__text">EasyFitness est un service qui vous aide à rester en forme!</div>
+        <button type="button" class="middle__button">CONTINUE</button>
+        <div class="middle__text">assistance 0975182032 <br>
+            4.5 EURO par SMS + prix SMS</div>
+    </div>
+    <div class="footer">
+        <div class="footer__text"> En cliquant sur continuer, vous déclaréz avoir lu et accepté les
+            <a href="http://lp.easy-fitness.online/frsms/terms.html" class="footer__link">CGV</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
