@@ -29,7 +29,7 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            /*justify-content: space-between;*/
+            justify-content: space-between;
         }
         .top {
             margin: 0 auto;
@@ -70,25 +70,24 @@
         .middle__button {
             display: block;
             margin: 0 auto;
-            padding: 25px 64px;
+            padding: 21px 78px;
             background: linear-gradient(94.47deg, #FFE200 0%, #FE8C05 100%);
             box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.15);
             border-radius: 10px;
             border: none;
-            text-align: center;
             font-style: normal;
             font-weight: bold;
-            font-size: 40px;
-            line-height: 49px;
+            font-size: 36px;
+            line-height: 44px;
             color: #FFFFFF;
         }
         .middle__text {
             max-width: 80%;
-            margin: 4px auto 0;
+            margin: 6px auto 0;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
-            line-height: 22px;
+            font-size: 14px;
+            line-height: 17px;
             text-align: center;
             color: #000000;
         }
@@ -101,13 +100,14 @@
             min-height: 55px;
         }
         .footer__text {
+            max-width: 90%;
+            margin: 4px auto 0;
             font-style: normal;
             font-weight: normal;
-            font-size: 16px;
-            line-height: 20px;
+            font-size: 14px;
+            line-height: 17px;
             text-align: center;
-            color: #ffffff;
-            margin-top: 4px;
+            color: #FFFFFF;
         }
         .footer__link {
             text-decoration: underline;
@@ -120,7 +120,7 @@
                 line-height: 30px;
             }
         }
-        @media (max-height: 578px) {
+        @media (max-height: 612px) {
             .middle__img {
                 width: 250px;
                 height: 198px;
@@ -131,7 +131,7 @@
                 line-height: 30px;
             }
         }
-        @media (max-height: 515px) {
+        @media (max-height: 555px) {
             .middle__img {
                 width: 200px;
                 height: 158px;
@@ -148,15 +148,16 @@
                 line-height: 16px;
             }
         }
-        @media (max-height: 465px) {
+        @media (max-height: 507px) {
             .middle {
                 align-self: center;
-                flex: 0;
+                flex: 0.8;
             }
             .middle__img {
                 display: none;
             }
             .middle__button {
+                margin-top: 18px;
                 padding: 25px 64px;
             }
             .middle__text {
@@ -200,9 +201,9 @@
                 line-height: 16px;
             }
         }
-        @media (min-height: 731px) {
+        @media (min-height: 750px) {
             .middle {
-                flex: 0;
+                flex: 0.5;
             }
         }
     </style>
@@ -215,7 +216,7 @@
     </div>
     <div class="middle">
         <div class="middle__img"></div>
-        <button type="button" class="middle__button">CONTINUE</button>
+        <button type="button" class="middle__button">Continue</button>
         <div class="middle__text">assistance 0975182032 <br>
             4.5 EURO par SMS + prix SMS</div>
     </div>

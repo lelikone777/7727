@@ -54,11 +54,12 @@
             width: 100%;
             margin: 0 auto;
             align-self: center;
+            flex: 1;
         }
         .middle__img {
             width: 229px;
             height: 234px;
-            margin: 18px auto 18px;
+            margin: 0 auto;
             background: url('img/hero.svg') no-repeat;
             -webkit-background-size: contain;
             background-size: contain;
@@ -68,7 +69,7 @@
         .middle__button {
             display: block;
             margin: 0 auto;
-            padding: 25px 64px;
+            padding: 25px 75px;
             background: linear-gradient(96.47deg, #4F71B6 8.41%, #5180DE 80.43%);
             box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
             border-radius: 30px;
@@ -82,7 +83,7 @@
         }
         .middle__text {
             max-width: 80%;
-            margin: 4px auto 0;
+            margin: 18px auto 0;
             font-style: normal;
             font-weight: normal;
             font-size: 18px;
@@ -189,6 +190,11 @@
             .footer__text {
                 font-size: 12px;
                 line-height: 16px;
+            }
+        }
+        @media (min-height: 800px) {
+            .middle {
+                flex: 0;
             }
         }
     </style>
