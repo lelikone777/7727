@@ -148,10 +148,10 @@
                 line-height: 16px;
             }
         }
-        @media (max-height: 507px) {
+        @media (max-height: 459px) {
             .middle {
                 align-self: center;
-                flex: 0.8;
+                flex: 0.9;
             }
             .middle__img {
                 display: none;
@@ -174,9 +174,9 @@
         }
         @media (max-width: 370px) {
             .middle__img {
-                width: 260px;
-                height: 158px;
-                margin: 20px auto 20px;
+                width: 232px;
+                height: 148px;
+                margin: 10px auto 10px;
             }
             .middle__button {
                 padding: 25px 0;

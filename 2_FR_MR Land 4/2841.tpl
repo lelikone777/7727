@@ -69,7 +69,7 @@
         .middle__button {
             display: block;
             margin: 0 auto;
-            padding: 25px 75px;
+            padding: 25px 65px;
             background: linear-gradient(96.47deg, #4F71B6 8.41%, #5180DE 80.43%);
             box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
             border-radius: 30px;
@@ -115,8 +115,8 @@
         }
         @media (max-height: 578px) {
             .middle__img {
-                width: 200px;
-                height: 204px;
+                width: 180px;
+                height: 181px;
             }
             .middle__button {
                 padding: 25px 64px;
@@ -126,8 +126,8 @@
         }
         @media (max-height: 515px) {
             .middle__img {
-                width: 150px;
-                height: 153px;
+                width: 136px;
+                height: 137px;
             }
             .middle__text {
                 font-size: 14px;
@@ -141,7 +141,7 @@
                 line-height: 16px;
             }
         }
-        @media (max-height: 465px) {
+        @media (max-height: 459px) {
             .middle {
                 align-self: center;
                 flex: 0.5;
@@ -179,7 +179,7 @@
         @media (min-width: 370px)
         and (max-width: 400px) {
             .middle__button {
-                padding: 25px 60px;
+                padding: 25px 50px;
             }
         }
 
